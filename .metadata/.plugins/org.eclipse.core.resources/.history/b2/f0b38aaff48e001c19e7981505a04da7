@@ -1,0 +1,33 @@
+package Java0216;
+
+import java.util.Scanner;
+
+public class ex09_arrayEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 동전의 갯수를 구하는 문제
+		// 어떤 금액을 입력하게되면 각 동전이 몇개씩 필요한지 출력하는 문제
+		
+		// ex) 2680원 
+		// 500원 : 5개
+		// 100원 : 1개
+		// 50원 : 1개
+		// 10원 : 3개
+		
+		int score[] = {0,0,0,0};
+		int sum = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		 System.out.println("금액 입력");
+		for(int i = 0; i < score.length; i++ ) {
+			
+			score[i] = sc.nextInt();
+			sum += score[i];
+		}
+		
+		System.out.println(score);
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package Java0215;
+
+import java.util.Scanner;
+
+public class ex09_forEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//두개의 정수 (시작, 끝) 을 입력받아서
+		// 두 수 사이의 숫자의 총합을 구하는 프로그램을 만들어보시오.
+		
+		//ex) 3, 5를 입력시 >> 3 + 4 + 5
+		
+		int sNum, INum;
+		int max;
+		int min;
+		int sum = 0;
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("첫번째 숫자를 입력하세요.");
+	    sNum = sc.nextInt();
+	    System.out.println("두번째 숫자를 입력하세요.");
+	    INum = sc.nextInt();
+	    
+	   if(sNum > INum) {
+		   max = sNum;
+		   min = INum;
+		  
+		   }else {
+			   max = INum;
+			   min = sNum;
+	   }
+	    for(int i = min; i <=max; i++) {
+	    	sum = sum + i;
+	    	
+	    	if(i<max) {
+	    		System.out.println(i + " + ");
+	    	} else {
+	    		System.out.println(i + "=" + sum);
+	    	}
+	    }
+	}
+
+}

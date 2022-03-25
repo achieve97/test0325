@@ -1,0 +1,67 @@
+/**
+   Date : 2022.02.16
+   Author : inchoriya
+   Description : 배열(Array)예제2
+   version : 1.0
+ */
+package java0216;
+
+import java.util.Scanner;
+
+public class ex09_arrayEx2 {
+	public static void main(String[] args) {
+		// 동전 갯수를 구하는 문제
+		// 어떤 금액을 입력하게 되면 각 동전이 몇개씩 필요한지 출력하는 문제
+		
+		// ex) 2680원
+		// 500원 : 5개
+		// 100원 : 1개
+		// 50원  : 1개
+		// 10원  : 3개
+		
+		// 2680 - (500x5) = 180
+		// 180 - (100x1) = 80
+		// 80 - (50x1) = 30
+		// 30 - (10x3) = 0
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("금액을 입력하세요 >> ");
+		int money = sc.nextInt();
+		
+		int coin[] = {500,100,50,10};
+		// coin[0] = 500
+		// coin[1] = 100
+		// coin[2] = 50
+		// coin[3] = 10
+		
+		for(int i=0; i<coin.length; i++) {
+			int coinCnt = money / coin[i];
+			// (0) 코인갯수 = 2680 / 500 => 5개
+			// (1) 코인갯수 = 180 / 100 => 1개
+			// (2) 코인갯수 = 80 / 50 => 1개
+			// (3) 코인갯수 = 30 / 10 => 3개
+			
+			// money = money - coin[i] * coinCnt;
+			money = money % coin[i];
+			// (0) money = 2680 - 500 * 5 => 180
+			// (1) money = 180 - 100 * 1 => 80
+			// (2) money = 80 - 50 * 1 => 30
+			// (3) money = 30 - 10 * 3 => 0
+			
+			System.out.println(coin[i] + "원 동전은 " + coinCnt + "개!");
+			System.out.println("남은 금액은 " + money + "원!\n");
+		}
+		
+		
+		
+		
+		
+	}
+	
+	
+}
+
+
+
+

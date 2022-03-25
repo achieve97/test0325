@@ -1,0 +1,32 @@
+package Java0217;
+
+import java.util.Scanner;
+
+public class ex07_ArrayEx5 {
+	public static void main(String[] args) {
+		
+		// 스캐너를 이용해서 고등학교 3학년 동안의 학기별 성적 입력
+		// 총점과 평균을 구하는 예제
+		Scanner sc = new Scanner(System.in);
+		double score[][] = new double[3][2];
+		double sum = 0;
+		double avg = 0;
+		
+		System.out.println("성적을 입력해주세요!");
+		
+		for(int i =0; i<score.length; i++) {
+			
+			for( int j = 0; j < score[i].length; j++) {
+				
+				score[i][j] = sc.nextDouble();
+				sum += score[i][j];
+			}
+		}
+		// 평균 구하기
+		// 총점 / 갯수(6)개 = 3학년(3개 : score.length) x 2학기( 2개 : score[0].length) 
+		avg = sum / (score.length * score[0].length);
+		
+		System.out.println("고등학교 성적 총점 : " +sum);
+		System.out.println("고등학교 성적 평균 : " +avg);
+	}
+}

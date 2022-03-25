@@ -1,0 +1,22 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : 반복문 for문
+ * Version : 1.0
+ */
+package Java0215;
+
+public class ex08_loopFor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		    // 10번 출력
+		
+		for(int i = 1; i<=10 ; i++) {
+			
+			System.out.println("실행문");
+		}
+	}
+
+}

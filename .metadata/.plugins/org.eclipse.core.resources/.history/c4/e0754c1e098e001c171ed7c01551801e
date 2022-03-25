@@ -1,0 +1,23 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : 입력 Scanner
+ * Version : 1.0
+ */
+
+
+package Java0215;
+
+public class ex03_condition {
+	public static void main(String[]args) {
+		
+		boolean condition = false;
+		if(condition) {
+			System.out.println("조건 만족!");
+			System.out.println("condition : " + condition);
+		} else {
+			System.out.println("조건 불만족!");
+			System.out.println("condition : " + condition);
+		}
+	}
+}

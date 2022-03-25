@@ -1,0 +1,72 @@
+package java0215;
+
+import java.util.Scanner;
+
+public class ex06_KIOSK {
+
+	public static void main(String[] args) {
+		// 키오스크 : 터치스크린 방식 무인주문시스템
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num;
+		int price = 0;
+		int btn;
+		String menu="";
+		
+		System.out.println();
+		System.out.println("맥도날드에 오신것을 환영합니다.");
+		System.out.println("주문을 도와드리겠습니다.\n");
+		
+		System.out.println("============ 메 뉴 ============");
+		System.out.println("1.빅맥\t2.불고기버거");
+		System.out.println("3.치즈버거\t4.1955버거\n");
+		System.out.print("메뉴를 선택하세요 >> ");
+		
+		num = sc.nextInt();
+		btn = sc.nextInt();
+		
+		switch(num){
+		case 1:
+			System.out.println(num + " 번 메뉴 세트 or 단품 선택해주세요");
+			System.out.println("1. 세트\t 2. 단품");
+			
+			menu = "빅맥";
+			price = 4000;
+			break;
+		case 2:
+			menu = "불고기버거";
+			price = 2500;
+			break;
+		case 3:
+			menu = "치즈버거";
+			price = 3000;
+			break;
+		case 4:
+			menu = "1955버거";
+			price = 5000;
+			break;
+		default:
+			System.out.println("해당하는 메뉴는 없습니다.");
+			break;
+		}
+		
+		if(num>=1 && num<=4) {
+			System.out.print("\n주문하신 메뉴는 " + menu);
+			System.out.println(", 가격은 " + price + "원 입니다.");
+		}
+		
+		System.out.println("이용해 주셔서 감사합니다.");
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+

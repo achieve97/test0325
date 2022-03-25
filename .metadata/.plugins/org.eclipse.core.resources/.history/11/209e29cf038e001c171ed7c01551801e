@@ -1,0 +1,29 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : 입력 Scanner
+ * Version : 1.0
+ */
+package Java0215;
+
+import java.util.Scanner;
+
+public class ex01_Scanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("print");
+		System.out.println("println");
+		System.out.println("print와 println의 차이점");
+		
+		System.out.print("이름 입력 >> ");
+		String name = sc.next();
+		System.out.print("나이 입력 >> ");
+		int age = sc.nextInt();
+		
+		System.out.println("이름 : " + name);
+		System.out.println("나이 : " + age);
+	}
+
+}

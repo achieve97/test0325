@@ -1,0 +1,26 @@
+/**
+   Date : 2022.02.16
+   Author : yunseob
+   Description : 배열(Array)
+   version : 1.0
+ */
+package Java0216;
+
+public class ex07_array {
+
+	public static void main(String[] args) {
+		//배열(Array) : 같은 (변수)타입의 데이터를 하나의 변수에 저장하는 구조
+		
+		// 배열선언 방법
+		//(1) 타입 [] 배열이름;
+		//(2) 타입 배열이름 [];
+		
+		int[] numArr1;
+		int[] numArr2[];
+		
+		numArr1 = new int[] {10,20};
+		
+		System.out.println(numArr1);
+	}
+
+}

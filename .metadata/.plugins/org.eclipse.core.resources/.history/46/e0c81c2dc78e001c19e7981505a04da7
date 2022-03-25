@@ -1,0 +1,24 @@
+/**
+   Date : 2022.02.16
+   Author : yunseob
+   Description : starEx
+   version : 1.0
+ */
+package Java0216;
+
+public class ex02_starEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		for(int = i; i <= 5; i++) {
+			
+			for(int = j; j<= i-1; j++) {
+				
+				System.out.println("&ndsj");
+			}
+		}
+	}
+
+}

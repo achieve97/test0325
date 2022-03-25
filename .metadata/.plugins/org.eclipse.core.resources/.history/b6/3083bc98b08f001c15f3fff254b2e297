@@ -1,0 +1,43 @@
+package Java0217;
+
+import java.util.Scanner;
+
+public class ex04_ArrayEx31 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		boolean run = true;
+		int score[];
+		int stuNum;
+		
+		while(run) {
+			System.out.println("=======================");
+			System.out.println("1.학생수 2.점수입력 3.학생별점수 4.분석 5.종료");
+			System.out.println("=======================");
+			System.out.print("메뉴선택 >>");
+			int menu = sc.nextInt
+					
+		switch(menu) {
+		case 1:
+			break;
+		case 1:
+			break;
+		case 1:
+			break;
+		case 1:
+			break;
+		case 1:
+			run = false;
+			System.out.println("프로그램을 종료합니다!");
+			break;
+			System.out.println("다시 입력해주세요");
+			default:
+		}
+		}
+	}
+	
+	
+}

@@ -1,0 +1,42 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : switch
+ * Version : 1.0
+ */
+package Java0215;
+
+import java.util.Scanner;
+
+public class ex05_switch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자입력 >>");
+		int sNum = sc.nextInt();
+		
+		
+		switch(sNum) {
+		case 0 :
+			System.out.println("0을 입력했습니다.");
+			break;
+		case 1 :
+			System.out.println("1을 입력했습니다.");
+			break;
+		case 2 :
+			System.out.println("2을 입력했습니다.");
+			break;
+		case 3 :
+			System.out.println("3을 입력했습니다.");
+			break;
+		default :
+			System.out.println("그 외의 숫자를 입력했습니다.");
+			break;
+		}
+
+	}
+
+}

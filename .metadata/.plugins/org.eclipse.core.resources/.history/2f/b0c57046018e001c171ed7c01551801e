@@ -1,0 +1,21 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : 입력 Scanner
+ * Version : 1.0
+ */
+package Java0215;
+
+import java.util.Scanner;
+
+public class ex01_Scanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		sc.next();
+		sc.nextInt();
+	}
+
+}

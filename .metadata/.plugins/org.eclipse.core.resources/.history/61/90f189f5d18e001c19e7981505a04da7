@@ -1,0 +1,30 @@
+/**
+   Date : 2022.02.16
+   Author : yunseob
+   Description : while문을 이용한 예제
+   version : 1.0
+ */
+package Java0216;
+
+import java.util.Scanner;
+
+public class ex04_whileEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int balance = 0;
+		boolean run = true;
+		int menu;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(run) {
+			System.out.println("=================================");
+			System.out.println("1.예금/t 2.출금 /t3.잔액조회/t4.종료");
+			System.out.println("=================================");
+			System.out.println("선택 >>");
+			menu = sc.nextInt();
+		}
+	}
+
+}

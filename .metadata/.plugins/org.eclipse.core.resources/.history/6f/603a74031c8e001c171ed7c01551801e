@@ -1,0 +1,71 @@
+/**
+* Date : 2022. 02. 15
+ * Author : yunseob
+ * Description : switch
+ * Version : 1.0
+ */
+package Java0215;
+
+import java.util.Scanner;
+
+public class ex05_switch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("월을 입력하세요 >>");
+		int sNum = sc.nextInt();
+		
+		
+		switch(sNum) {
+		case 0 :
+			System.out.println("0을 입력했습니다.");
+			break;
+		case 1 :
+			System.out.println("1을 입력했습니다.");
+			break;
+		case 2 :
+			System.out.println("2을 입력했습니다.");
+			break;
+		case 3 :
+			System.out.println("3을 입력했습니다.");
+			break;
+		default :
+			System.out.println("그 외의 숫자를 입력했습니다.");
+			break;
+		}
+		
+		//월별 날짜 계산기
+		//월을 입력받아서 해당 월에 대한 날짜 계산하기
+		
+		switch(sNum) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println("해당 월은 31일까지 있습니다.");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("해당 월은 30일까지 있습니다.");
+			break;
+		
+		case 2:
+			System.out.println("해당 월은 28일까지 있습니다.");
+			break;
+		default:
+			System.out.println("다시 입력해주세요.");
+			break;
+			
+		}
+
+	}
+
+}

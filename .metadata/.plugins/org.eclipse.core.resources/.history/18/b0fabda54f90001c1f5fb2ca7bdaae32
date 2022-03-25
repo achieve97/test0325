@@ -1,0 +1,51 @@
+/**
+   Date : 2022.02.17
+   Author : inchoriya
+   Description : 배열 활용 예제2
+   version : 1.0
+ */
+package java0217;
+
+import java.util.Scanner;
+
+public class ex02_ArrayEx2 {
+
+	public static void main(String[] args) {
+		// 크기가 5인 배열을 선언
+		// 스캐너를 이용해서 5개의 값을 입력
+		// 입력한 값중에 가장 큰 값 구하기
+
+		Scanner sc = new Scanner(System.in);
+		int arr[] = {0,0,0,0,0};
+		// int arr[] = new int[5];
+
+		int max = 0;
+		int min = 0;
+		System.out.println("점수 " + arr.length + "개를 입력해주세요!");
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print((i + 1) + "번째 점수 입력 >> ");
+			arr[i] = sc.nextInt();
+
+			// 처음 입력받은 값을 max와 min에 대입한다.
+			if(i==0) {
+				max = arr[0];
+				min = arr[0];
+			}
+			
+			// 우리가 입력한 값이 max보다 크면 입력한 값이 max가 된다.
+			if (arr[i] > max) {
+				max = arr[i];
+			} else if (arr[i] < min) {
+				min = arr[i];
+			}
+		}
+
+		System.out.println("입력한 값 중 가장 큰 수는 " + max + " 입니다.");
+		System.out.println("입력한 값 중 가장 작은 수는 " + min + " 입니다.");
+
+		// 응용! 가장 큰 수와 가장 작은 수를 구하세요!
+
+	}
+
+}
